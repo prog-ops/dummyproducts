@@ -3,7 +3,7 @@
 import { sliceStartAtom, sliceEndAtom, currentPageAtom } from '../storage/atoms'
 import { useAtom } from 'jotai'
 import Link from "next/link";
-import Product from "@/app/dummyproducts/[product]/page";
+import Product from "@/app/dummyproducts/[id]/page";
 
 // export default function ProductsList({ products }: any){
 export default function ProductsList({ products }: { products: any[] }){

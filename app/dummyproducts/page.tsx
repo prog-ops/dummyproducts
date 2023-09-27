@@ -13,7 +13,7 @@ async function getProducts() {
       {cache: "no-store"}
   )
   const data = await response.json()
-  console.log('products', data.products)
+  // console.log('products', data.products)
   return data?.products as any[]
 }
 
