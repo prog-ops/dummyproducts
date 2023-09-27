@@ -5,7 +5,8 @@ import { useAtom } from 'jotai'
 import Link from "next/link";
 import Product from "@/app/dummyproducts/[product]/page";
 
-export default function ProductsList({ products }: any){
+// export default function ProductsList({ products }: any){
+export default function ProductsList({ products }: { products: any[] }){
   const [currentSliceStart, setCurrentSliceStart] = useAtom(sliceStartAtom)
   const [currentSliceEnd, setCurrentSliceEnd] = useAtom(sliceEndAtom)
   const [currentPage, setCurrentPage] = useAtom(currentPageAtom)
