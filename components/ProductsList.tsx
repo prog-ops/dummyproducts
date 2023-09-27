@@ -30,7 +30,7 @@ export default function ProductsList({ products }: { products: any[] }){
           {products.slice(currentSliceStart, currentSliceEnd).map((product: any) => (
               <div key={product.id}>
                 <Link href={`/dummyproducts/${product.id}`}>
-                  <Product product={product}/>
+                  <Product params={product}/>
                 </Link>
               </div>
           ))}
